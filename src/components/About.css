@@ -1,0 +1,287 @@
+/* =========================
+   About Section
+========================= */
+
+.about-section {
+  padding: 110px 8%;
+  background: #171214;
+  color: #fff7ed;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about-heading span {
+  display: block;
+  margin-bottom: 12px;
+  color: #be123c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-heading h2 {
+  margin: 0 0 15px;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.about-heading p {
+  margin: 0;
+  color: #a8a29e;
+  font-size: 1rem;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+.about-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* =========================
+   Profile Image
+========================= */
+
+.about-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.about-avatar {
+  width: 280px;
+  height: 340px;
+  overflow: hidden;
+
+  background: #21191c;
+  border: 1px solid #3f2930;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.about-avatar img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+
+  transition: transform 0.4s ease;
+}
+
+.about-avatar:hover img {
+  transform: scale(1.03);
+}
+
+/* =========================
+   Details
+========================= */
+
+.about-details h3 {
+  margin: 0 0 22px;
+  font-size: 1.9rem;
+}
+
+.about-details > p {
+  max-width: 680px;
+  margin-bottom: 16px;
+
+  color: #b8b0ad;
+  line-height: 1.8;
+}
+
+/* =========================
+   Highlights
+========================= */
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #302326;
+}
+
+.highlight-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #21191c;
+  border-radius: 8px;
+
+  font-size: 1rem;
+}
+
+.highlight-item small {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #be123c;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.highlight-item strong {
+  color: #f5f0ed;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.about-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.about-btn {
+  padding: 10px 20px;
+
+  border: 1px solid #9f1239;
+  border-radius: 6px;
+
+  background: #9f1239;
+  color: #fff;
+
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #881337;
+  border-color: #881337;
+}
+
+.about-btn-outline {
+  background: transparent;
+  color: #f5f0ed;
+}
+
+.about-btn-outline:hover {
+  background: #21191c;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 90px 6%;
+  }
+
+  .about-heading {
+    margin-bottom: 50px;
+  }
+
+  .about-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-avatar {
+    width: 230px;
+    height: 280px;
+  }
+
+  .about-details {
+    text-align: center;
+  }
+
+  .about-details > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-highlights {
+    text-align: left;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 75px 5%;
+  }
+
+  .about-heading h2 {
+    font-size: 2rem;
+  }
+
+  .about-heading p {
+    line-height: 1.6;
+  }
+
+  .about-avatar {
+    width: 210px;
+    height: 260px;
+  }
+
+  .about-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .highlight-item strong {
+    font-size: 0.82rem;
+  }
+
+  .about-links {
+    flex-direction: column;
+  }
+
+  .about-btn {
+    text-align: center;
+  }
+}
